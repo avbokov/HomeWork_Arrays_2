@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<conio.h>
 
 using namespace std;
@@ -18,7 +18,7 @@ void main()
 #ifdef TASK_1
 	const int n = 10;
 
-	// Вывод массива
+	// Р’С‹РІРѕРґ РјР°СЃСЃРёРІР°
 
 	int arr[n] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
@@ -31,9 +31,9 @@ void main()
 	int number_of_shifts;
 	char direction_of_shifts;
 
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> number_of_shifts;
 	cout << endl;
-	cout << "Для сдвига влево нажмите l, для сдвига вправо нажмите r";
+	cout << "Р”Р»СЏ СЃРґРІРёРіР° РІР»РµРІРѕ РЅР°Р¶РјРёС‚Рµ l, РґР»СЏ СЃРґРІРёРіР° РІРїСЂР°РІРѕ РЅР°Р¶РјРёС‚Рµ r";
 	cout << endl << endl;
 
 	direction_of_shifts = _getch();
@@ -42,7 +42,7 @@ void main()
 	{
 	case 'l':
 
-		cout << "Сдвигаем массив влево на " << number_of_shifts << " элемент(-а, -ов):" << endl << endl;
+		cout << "РЎРґРІРёРіР°РµРј РјР°СЃСЃРёРІ РІР»РµРІРѕ РЅР° " << number_of_shifts << " СЌР»РµРјРµРЅС‚(-Р°, -РѕРІ):" << endl << endl;
 
 		for (int i = 0; i < number_of_shifts; i++)
 		{
@@ -58,7 +58,7 @@ void main()
 
 	case 'r':
 
-		cout << "Сдвигаем массив вправо на " << number_of_shifts << " элемент(-а, -ов):" << endl << endl;
+		cout << "РЎРґРІРёРіР°РµРј РјР°СЃСЃРёРІ РІРїСЂР°РІРѕ РЅР° " << number_of_shifts << " СЌР»РµРјРµРЅС‚(-Р°, -РѕРІ):" << endl << endl;
 
 		for (int i = 0; i < number_of_shifts; i++)
 		{
@@ -73,7 +73,7 @@ void main()
 		break;
 	}
 
-	// Вывод сдвинутого массива
+	// Р’С‹РІРѕРґ СЃРґРІРёРЅСѓС‚РѕРіРѕ РјР°СЃСЃРёРІР°
 
 	for (int i = 0; i < n; i++)
 	{
@@ -91,11 +91,11 @@ void main()
 
 	int arr[N];
 
-	cout << "Введите десятичное число ( max. 1000000 ): " << endl << endl; cin >> number;
+	cout << "Р’РІРµРґРёС‚Рµ РґРµСЃСЏС‚РёС‡РЅРѕРµ С‡РёСЃР»Рѕ ( max. 1000000 ): " << endl << endl; cin >> number;
 
 	cout << endl;
 
-	cout << "Десятичное число " << number << " в двоичной системе счисления: " << endl;
+	cout << "Р”РµСЃСЏС‚РёС‡РЅРѕРµ С‡РёСЃР»Рѕ " << number << " РІ РґРІРѕРёС‡РЅРѕР№ СЃРёСЃС‚РµРјРµ СЃС‡РёСЃР»РµРЅРёСЏ: " << endl;
 
 	if (number == 0) cout << endl << number;
 
@@ -125,11 +125,11 @@ void main()
 
 	char arr[N];
 
-	cout << "Введите десятичное число ( max. 1000000 ): " << endl << endl; cin >> number;
+	cout << "Р’РІРµРґРёС‚Рµ РґРµСЃСЏС‚РёС‡РЅРѕРµ С‡РёСЃР»Рѕ ( max. 1000000 ): " << endl << endl; cin >> number;
 
 	cout << endl;
 
-	cout << "Десятичное число " << number << " в шестнадцатиричной системе счисления: " << endl;
+	cout << "Р”РµСЃСЏС‚РёС‡РЅРѕРµ С‡РёСЃР»Рѕ " << number << " РІ С€РµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅРѕР№ СЃРёСЃС‚РµРјРµ СЃС‡РёСЃР»РµРЅРёСЏ: " << endl;
 
 	if (number == 0) cout << endl << number;
 
@@ -140,7 +140,7 @@ void main()
 
 		arr[n] = remainder;
 
-		if (remainder == 10) arr[n] = 'A';      // Так и не смог избавиться от этой "бомбы" ниже, без неё или только цифры или только символы ASCII
+		if (remainder == 10) arr[n] = 'A';      // РўР°Рє Рё РЅРµ СЃРјРѕРі РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ СЌС‚РѕР№ "Р±РѕРјР±С‹" РЅРёР¶Рµ, Р±РµР· РЅРµС‘ РёР»Рё С‚РѕР»СЊРєРѕ С†РёС„СЂС‹ РёР»Рё С‚РѕР»СЊРєРѕ СЃРёРјРІРѕР»С‹ ASCII
 		else if (remainder == 11) arr[n] = 'B';
 		else if (remainder == 12) arr[n] = 'C';
 		else if (remainder == 13) arr[n] = 'D';
